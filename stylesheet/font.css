@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "UniSansHeavyCAPS";
+    src: url("../fonts/UniSansHeavyCAPS/UniSansHeavyCAPS.eot");
+    src: url("../fonts/UniSansHeavyCAPS/UniSansHeavyCAPS.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/UniSansHeavyCAPS/UniSansHeavyCAPS.woff") format("woff"),
+    url("../fonts/UniSansHeavyCAPS/UniSansHeavyCAPS.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "VelaSans-Regular";
+    src: url("../fonts/VelaSans-Regular/VelaSans-Regular.eot");
+    src: url("../fonts/VelaSans-Regular/VelaSans-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/VelaSans-Regular/VelaSans-Regular.woff") format("woff"),
+    url("../fonts/VelaSans-Regular/VelaSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 900;
+}

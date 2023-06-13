@@ -1,0 +1,161 @@
+body, html {
+    overflow: hidden;
+    display: block;
+    font-size: 32vw;
+    background: #0E2800;
+}
+
+.menu {
+    background: url('../images/menu.svg');
+    background-size: 100% 100%;
+    right: 2%;
+    top: 5%;
+    width: 3%;
+    height: 2%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.menu:hover {
+    pointer-events: all;
+  }
+#item {
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 5%;
+    margin: 2% 0 0 45%;
+  }
+
+  #newss:hover {
+    content: url('../images/news.svg');
+  }
+  #orderr:hover {
+    content: url('../images/order.svg');
+  }
+  #storee:hover {
+    content: url('../images/store.svg');
+  }
+  #aboutt:hover {
+    content: url('../images/about.svg');
+  }
+.kvadillac {
+    position: absolute;
+    left: 4%;
+    top: 5%;
+
+    font-family: 'VelaSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4%;
+
+
+    color: #7FE941;
+}
+
+.contactus {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+
+    font-family: 'VelaSans-Regular';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32%;
+    line-height: 100.1%;
+
+    color: #7FE941;
+}
+
+.contactus1 {
+    position: absolute;
+    left: 55%;
+    top: 55%;
+
+    font-family: 'VelaSans-Regular';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32%;
+    line-height: 100.1%;
+
+    color: #7FE941;
+}
+
+.email {
+    position: absolute;
+    width: 223px;
+    height: 480px;
+    left: 4%;
+    top: 21%;
+
+    font-family: 'VelaSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6%;
+    line-height: 300%;
+
+
+    color: #FFFFFF;
+}
+
+.emailtext {
+    position: absolute;
+    width: 223px;
+    height: 480px;
+    left: 4%;
+    top: 26%;
+
+    font-family: 'Vela Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4%;
+    line-height: 450%;
+
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+
+.apply {
+    position: absolute;
+    left: 23%;
+    top: 26%;
+
+    font-family: 'VelaSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6%;
+
+
+    color: #FFFFFF;
+}
+
+.apply1 {
+    position: absolute;
+    left: 23%;
+    top: 31%;
+
+    font-family: 'Vela Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4%;
+
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+
+.socialmedia {
+    word-spacing: 3em;
+    position: absolute;
+    left: 4%;
+    bottom: 3%;
+
+    font-family: 'Vela Sans';
+    font-style: normal;
+    font-size: 5%;
+    line-height: 100.1%;
+
+    color: #7FE941;
+}

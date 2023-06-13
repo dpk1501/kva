@@ -1,0 +1,288 @@
+body, html {
+    overflow: hidden;
+    display: block;
+    background: #0E2800;
+    font-size: 32vw;
+}
+
+.letter {
+    height: 100%;
+    position: absolute;
+    left: 6%;
+    top: 24%;
+    width: 100%;
+    
+    font-family: 'VelaSans-Regular';
+    font-weight: 400;
+    font-size: 32%;
+    
+    color: #7FE941;
+
+    z-index: 1;
+}
+
+.letter1 {
+   height: 100%;
+    position: absolute;
+    left: 6%;
+    top: 44%;
+    
+    font-family: 'VelaSans-Regular';
+    font-weight: 400;
+    font-size: 32%;
+    
+    color: #7FE941;
+
+    z-index: 1;
+}
+
+.letter2 {
+    height: 100%;
+    position: absolute;
+    right: 6%;
+    top: 64%;
+    
+    font-family: 'VelaSans-Regular';
+    font-weight: 400;
+    font-size: 32%;
+    
+    color: #7FE941;
+
+    z-index: 1;
+}
+
+:root {
+    --delay: 0;
+    --duration: 800ms;
+    --iterations: 1;
+  }
+  
+  
+  
+  .reveal-text,
+  .reveal-text::after {
+    animation-delay: var(--animation-delay, 2s);
+    animation-iteration-count: var(--iterations, 1);
+    animation-duration: var(--duration, 800ms);
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+  }
+  
+  .reveal-text {
+    --animation-delay: var(--delay, 0);
+    --animation-duration: var(--duration, 800ms);
+    --animation-iterations: var(--iterations, 1);
+    animation-name: clip-text;
+  }
+    .reveal-text::after {
+      content: "";
+      position: absolute;
+      z-index: 3;
+      background-color: #f2f98b;
+      pointer-events: none;
+      animation-name: text-revealer;
+    }
+
+    .letters {
+        position: absolute;
+        left: 6%;
+        top: 24%;
+        width: 100%;
+        
+        font-family: 'VelaSans-Regular';
+        font-weight: 400;
+        font-size: 32%;
+        
+        color: #7FE941;
+    
+        z-index: 1;
+    }
+    
+    .letters1 {
+        position: absolute;
+        left: 6%;
+        top: 44%;
+        
+        font-family: 'VelaSans-Regular';
+        font-weight: 400;
+        font-size: 32%;
+        
+        color: #7FE941;
+    
+        z-index: 1;
+    }
+    
+    .letters2 {
+        position: absolute;
+        right: 6%;
+        top: 64%;
+        
+        font-family: 'VelaSans-Regular';
+        font-weight: 400;
+        font-size: 32%;
+        
+        color: #7FE941;
+    
+        z-index: 1;
+    }
+  
+  
+  @keyframes clip-text {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  
+  @keyframes text-revealer {
+    
+    0%, 50% {
+      transform-origin: 0 50%;
+    }
+    
+    60%, 100% {
+      transform-origin: 100% 50%;   
+    }
+  
+    
+    60% {
+      transform: scaleX(1);
+    }
+    
+    100% {
+      transform: scaleX(0);
+    }
+  }
+
+.screen {
+    background: #0E2800;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+}
+
+.about {
+    position: absolute;
+    background-image: url('../images/about1.svg');
+    background-size: 100% 100%;
+    width: 15%;
+    height: 8%;
+    left: 10%;
+    top: 12%;
+
+    animation: about linear 6s infinite;
+
+    z-index: 2;
+}
+.about:hover {
+    animation-play-state: paused;
+    background-image: url('../images/about.svg');
+}
+
+.news {
+    position: absolute;
+    background-image: url('../images/news1.svg');
+    background-size: 100% 100%;
+    width: 15%;
+    height: 8%;
+    right: 15%;
+    top: 12%;
+
+    animation: news linear 10s infinite;
+
+    z-index: 2;
+}
+.news:hover {
+    animation-play-state: paused;
+    background-image: url('../images/news.svg');
+}
+.contacts {
+    position: absolute;
+    background-image: url('../images/contacts1.svg');
+    background-size: 100% 100%;
+    width: 15%;
+    height: 8%;
+    left: 40%;
+    top: 15%;
+
+    animation: contacts linear 7s infinite;
+
+    z-index: 2;
+}
+.contacts:hover {
+    animation-play-state: paused;
+    background-image: url('../images/contacts.svg');
+}
+
+.order {
+    position: absolute;
+    background-image: url('../images/order1.svg');
+    background-size: 100% 100%;
+    width: 15%;
+    height: 8%;
+    left: 20%;
+    bottom: 15%;
+
+    animation: order linear 3s infinite;
+
+    z-index: 2;
+}
+.order:hover {
+    animation-play-state: paused;
+    background-image: url('../images/order.svg');
+}
+
+.ourstore {
+    position: absolute;
+    background-image: url('../images/store1.svg');
+    background-size: 100% 100%;
+    width: 15%;
+    height: 8%;
+    right: 40%;
+    bottom: 10%;
+
+    animation: store linear 10s infinite;
+
+    z-index: 2;
+}
+.ourstore:hover {
+    animation-play-state: paused;
+    background-image: url('../images/store.svg');
+}
+
+
+@keyframes taxitext {
+    from { left: 100%; }
+    to { left: -100%; }
+}
+
+@keyframes about {
+    0% { top: 10%; }
+    50% { top: 15%; }
+    100% { top: 10%; }
+}
+@keyframes contacts {
+    0% { top: 20%; }
+    50% { top: 10%; }
+    100% { top: 20%; }
+}
+@keyframes news {
+    0% { top: 20%; }
+    50% { top: 15%; }
+    100% { top: 20%; }
+}
+@keyframes order {
+    0% { top: 75%; }
+    50% { top: 90%; }
+    100% { top: 75%; }
+}
+@keyframes store {
+    0% { top: 80%; }
+    50% { top: 90%; }
+    100% { top: 80%; }
+}
+
