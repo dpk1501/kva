@@ -42,6 +42,8 @@ $('.about').click(function() {
     window.open("about.html");
 });
 
+
+
 ( function($) {
   
   $(document).ready(function() {

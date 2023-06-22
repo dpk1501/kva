@@ -69,6 +69,7 @@ body, html {
   z-index: 0;
 }
 
+/* меню */
 .glow-on-hover {
   width: 100%;
   height: 100%;
@@ -137,7 +138,7 @@ body, html {
   width: 3%;
   height: 1%;
   position: relative;
-  margin: 5% 0 0 95%;
+  margin: 2% 0 0 95%;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -216,12 +217,13 @@ body, html {
   justify-content: space-between;
   width: 50%;
   height: 20%;
-  margin: -1% 0 0 42%;
+  margin: 0 0 0 42%;
   flex-grow: 1;
   flex-basis: 25%;
   min-width: 0;
   gap: 5%;
 }
+
 
 /* постеры */
 .containernews {
