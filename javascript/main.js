@@ -39,7 +39,7 @@ $('.store').click(function() {
     window.open("store.html");
 });
 $('.about').click(function() {
-    window.open("order.html");
+    window.open("about.html");
 });
 
 ( function($) {

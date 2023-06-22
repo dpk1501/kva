@@ -240,8 +240,8 @@ body, html {
 
 .containernews img {
   aspect-ratio: 1 / 1.5;
-  width: 140px;
-  height: 30%;
+  width: 4%;
+  height: auto;
 }
 
 .containernews img:hover {

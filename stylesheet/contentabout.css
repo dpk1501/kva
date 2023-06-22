@@ -2,7 +2,7 @@ body, html {
     overflow-x: hidden;
     display: block;
     font-size: 32vw;
-    height: 4500px;
+    height: 4000px;
     background: #0E2800;
 
     font-family: 'VelaSans-Regular';
@@ -552,213 +552,96 @@ body, html {
     bottom: 10%;
     right: 9%;
 }
-
+.aboutmed {
+  bottom: 7%;
+  color: #FFF;
+  font-size: 3%;
+  position: absolute;
+  right: 2%;
+}
+.aboutswamp {
+  bottom: 22%;
+  color: #FFF;
+  font-size: 3%;
+  position: absolute;
+  left: 5%;
+}
 .fifthscreenabout {
   position: relative;
   height: 10%;
+  /* overflow-x: auto; */
+  clip: rect(auto, auto, auto, auto);
 }
 
-/* слайдер */
-.slides {
-    position: relative;
-    top: 20%;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
+.fifthscreenabout::-webkit-scrollbar {
+  width: 0;
+}
+.fifthscreenabout::-moz-scrollbar {
+  width: 0;
+}
+.containermain {
+  width: 500vw;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  /* overflow-x: auto; */
+  background-size: cover;
+
 }
 
-
-.slides * {
-    user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
+.containermain::-webkit-scrollbar {
+  width: 0;
 }
 
-.slides input { display: none; }
-
-.slide-container { display: block; }
-
-.slide {
-    top: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-
-    transform: scale(0);
-
-    transition: all .7s ease-in-out;
+.containermain::-moz-scrollbar {
+  width: 0;
 }
 
-.slide img {
-    position: absolute;
-    left: 10%;
-    width: 50%;
-    height: 100%;
+.block1 {
+  margin: 3vw 3vw;
+  margin-bottom: 0;
+  width: 50vw;
+  height: 50vh;
+  border-radius: 2%;
+  background-size: cover;
+  transition: 1s;
 }
 
-.prev {
-  position: absolute;
-  left: 10%;
-  width: 20%;
-  height: 5%;
-  top: 5%;
-  width: 20%;
-  height: 20%;
-  display: none;
-  position: absolute;
-
-  opacity: 0;
-  z-index: 9;
-  cursor: pointer;
-
-  transition: opacity .2s;
-
-  color: #FFF;
-}
-.next {
-  position: absolute;
-  left: 40%;
-  width: 20%;
-  width: 10%;
-  top: 5%;
-  width: 20%;
-  height: 20%;
-  display: none;
-  position: absolute;
-
-  opacity: 0;
-  z-index: 9;
-  cursor: pointer;
-
-  transition: opacity .2s;
-
-  color: #FFF;
+#block1 {
+    width: 50vw;
+    height: 80vh;
 }
 
-.slide:hover + .nav label { opacity: 0.5; }
-
-.nav label:hover { opacity: 1; }
-
-.nav .next { right: 0; }
-
-input:checked + .slide-container  .slide {
-    opacity: 1;
-
-    transform: scale(1);
-
-    transition: opacity 1s ease-in-out;
+.pic0 {
+  background-image: url('../images/swampabout.png');
 }
 
-input:checked + .slide-container .nav label { display: block; }
-
-
-
-.aboutswamp {
-  top: 60%;
-  color: #FFF;
-  font-size: 4%;
-  position: absolute;
-  right: 5%;
+.pic1 {
+  background-image: url('../images/swampabout1.png');
 }
 
-/* второй слайдер */
-.slides1 {
-  position: relative;
-  top: 70%;
-  left: 10%;
-  width: 100%;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
+.pic2 {
+  background-image: url('../images/swampabout2.png');
 }
 
-
-.slides1 * {
-  user-select: none;
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
+.pic3 {
+  background-image: url('../images/swampabout3.png');
 }
 
-.slides1 input { display: none; }
-
-.slide-container1 { display: block; }
-
-.slide1 {
-  top: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-
-  transform: scale(0);
-
-  transition: all .7s ease-in-out;
+.pic4 {
+  background-image: url('../images/medabout.png');
 }
 
-.slide1 img {
-  position: absolute;
-  width: 60%;
-  height: 100%;
+.pic5 {
+  background-image: url('../images/medabou1.png');
 }
-
-.prev1 {
-position: absolute;
-top: 5%;
-width: 20%;
-height: 20%;
-display: none;
-position: absolute;
-
-opacity: 0;
-z-index: 9;
-cursor: pointer;
-
-transition: opacity .2s;
-
-color: #FFF;
+.pic6 {
+  background-image: url('../images/medabout2.png');
+  
 }
-.next1 {
-position: absolute;
-left: 40%;
-width: 10%;
-top: 5%;
-width: 20%;
-height: 20%;
-display: none;
-position: absolute;
-
-opacity: 0;
-z-index: 9;
-cursor: pointer;
-
-transition: opacity .2s;
-
-color: #FFF;
+.pic7 {
+  background-image: url('../images/medabout3.png');
 }
-
-.slide1:hover + .nav1 label { opacity: 0.5; }
-
-.nav1 label:hover { opacity: 1; }
-
-.nav1 .next1 { right: 0; }
-
-input:checked + .slide-container1  .slide1 {
-  opacity: 1;
-
-  transform: scale(1);
-
-  transition: opacity 1s ease-in-out;
-}
-
-input:checked + .slide-container1 .nav1 label { display: block; }
