@@ -3,7 +3,7 @@ body, html {
     display: block;
     font-size: 32vw;
     background: #0E2800;
-    aspect-ratio: 1 / 2;
+    aspect-ratio: 1 / 1.5;
     font-family: 'VelaSans-Regular';
 }
 
@@ -187,7 +187,10 @@ body, html {
     font-size: 32%;
     line-height: 100.1%;
 
-    color: #7FE941;
+    background: linear-gradient(180deg, #7FE941 0%, #00FFD5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .order-ride1 {
@@ -201,7 +204,10 @@ body, html {
   font-size: 32%;
   line-height: 100.1%;
 
-  color: #7FE941;
+  background: linear-gradient(180deg, #7FE941 0%, #00FFD5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .startjourney {
@@ -218,23 +224,55 @@ body, html {
   color: #7FE941;
 }
 
-.login-box {
-  border: 3px solid #7FE941;
+
+.login-box1 {
+  background: linear-gradient(180deg, #7FE941 0%, #00FFD5 100%);
+  border: 1px solid #000000;
+  border-radius: 30px;
   position: absolute;
-  width: 28%;
-  height: 65%;
+  width: 27%;
+  height: 50%;
   right: 13%;
   top: 20%;
-  /* background: linear-gradient(180deg, #7FE941 0%, #00FFD5 100%); */
-  /* background: #7FE941; */
+  z-index: 2;
   
   border-radius: 30px;
 }
 
+.thanks {
+  margin: 25% 0 0 0;
+  text-align: center;
+  font-size: 6%;
+}
+.login-box {
+  background: linear-gradient(180deg, #7FE941 0%, #00FFD5 100%);
+  border: 1px solid #000000;
+  border-radius: 30px;
+  position: absolute;
+  width: 27%;
+  height: 70%;
+  right: 13%;
+  top: 20%;
+  z-index: 1;
+  
+  border-radius: 30px;
+}
+
+.data {
+  margin: 9% 0 0 16%;
+  font-size: 6%;
+  font-family: 'VelaSans-Regular';
+}
+.data1 {
+  margin: 0 0 0 50%;
+  font-size: 6%;
+  font-family: 'VelaSans-Regular';
+}
+
 form {
-  margin: 15% 0 0 3%;
-  height: 100%;
-  width: 100%;
+  margin: 10% 0 0 8%;
+  height: 60%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -243,7 +281,6 @@ form {
 .login-box h2 {
   margin: 0 0 30px;
   padding: 0;
-  color: #fff;
   text-align: center;
 }
 
@@ -255,23 +292,21 @@ form {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: #fff;
   margin-bottom: 30px;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid ;
   outline: none;
   background: transparent;
 }
 
 .login-box .user-box label {
   position: absolute;
-  border-radius: 25px;
+  border-radius: 20px;
   top:0;
   left: 0;
   padding: 10px 0;
   font-size: 16px;
   opacity: 50%;
-  color: #fff;
   pointer-events: none;
   transition: .5s;
 }
@@ -320,24 +355,25 @@ margin-left: 30%;
 }
 
 .login-box form a {
-  position: relative;
+  font-family: 'VelaSans-Regular';
+  position: absolute;
   display: inline-block;
-  border-radius: 30px;
-  padding: 10px 20px;
-  color:  #7FE941;
-  font-size: 16px;
-  text-decoration: none;
-  text-transform: uppercase;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 15px;
+  color:  #000000;
+  font-size: 4%;
   overflow: hidden;
+  text-decoration: none;
   transition: .5s;
-  margin-top: 40px;
-  letter-spacing: 4px
+  bottom: 5%; 
+  left: 35%;
 }
 
 .login-box a:hover {
   background: #0E2800;;
   color: #fff;
-  border-radius: 32px;
+  border-radius: 15px;
 }
 
 .login-box a span {
@@ -350,7 +386,7 @@ margin-left: 30%;
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(45deg, #7FE941, #48ff00, #00ffd5, #7FE941);
+  background: linear-gradient(45deg, #0E2800, #0E2800, #0E2800, #0E2800);
   animation: btn-anim1 1s linear infinite;
 }
 
@@ -368,7 +404,7 @@ margin-left: 30%;
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
+  background: linear-gradient(180deg, transparent, #0E2800);
   animation: btn-anim2 1s linear infinite;
   animation-delay: .25s
 }
@@ -387,7 +423,7 @@ margin-left: 30%;
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
+  background: linear-gradient(270deg, transparent, #0E2800);
   animation: btn-anim3 1s linear infinite;
   animation-delay: .5s
 }
@@ -406,7 +442,7 @@ margin-left: 30%;
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
+  background: linear-gradient(360deg, transparent, #0E2800);
   animation: btn-anim4 1s linear infinite;
   animation-delay: .75s
 }

@@ -3,6 +3,47 @@ body, html {
     display: block;
     background: #0E2800;
     font-size: 32vw;
+
+    font-family: 'VelaSans-Regular';
+    font-weight: 400;
+}
+
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+.cursor--small {
+  width: 10px;
+  height: 10px;
+  left: -2.5px;
+  top: -2.5px;
+  border-radius: 50%;
+  z-index: 11000;
+  background: var(--color-text);
+}
+.cursor--canvas {
+  width: 100vw;
+  height: 100vh;
+  z-index: 12000;
+}
+
+.letterbox1 {
+  position: absolute;
+  top: 15%;
+  right: -100%;
+  left: -100%;
+  margin: 0 -100%;
+  font-size: 65%;
+  line-height: normal;
+
+  background: linear-gradient(180deg, #7FE941 0%, #00FFD5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  animation: kvadillac linear 12.5s infinite;
 }
 
 .letter {
@@ -157,14 +198,6 @@ body, html {
     }
   }
 
-.screen {
-    background: #0E2800;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    opacity: 0;
-}
-
 .about {
     position: absolute;
     background-image: url('../images/about1.svg');
@@ -242,7 +275,7 @@ body, html {
     background-size: 100% 100%;
     width: 15%;
     height: 8%;
-    right: 40%;
+    right: 30%;
     bottom: 10%;
 
     animation: store linear 10s infinite;
@@ -286,3 +319,7 @@ body, html {
     100% { top: 80%; }
 }
 
+@keyframes kvadillac {
+  from { left: 100%; }
+  to { left: -100%; }
+}

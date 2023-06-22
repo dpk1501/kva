@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="stylesheet/style.css">
         <link rel="stylesheet" href="stylesheet/animate.css"/>
         <link href="stylesheet/contentabout.css" rel="stylesheet" type="text/css"/>
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
         
         <title>KVADILLAC</title>
     </head>
@@ -19,7 +19,6 @@
                     <span></span>
                   </div>
                     <div id="item">
-                        <!-- <a href="news.html"> -->
                         <button class="news glow-on-hover" type="button">
                             новости
                         </button>
@@ -40,13 +39,18 @@
             <div class="more"></div>
             <h2 class="text">мы развозим в любую точку планеты</h2>
             <h2 class="text1">твое личное лягушачье такси</h2>
-            <h1 class="welcome animate__animated animate__bounce">что такое</h1>
-            <h1 class="welcome1 animate__animated animate__bounce">квадиллак?</h1>
+            
+            <div class="container">
+                <div class="animation">
+                        <div class="first">что такое</div>
+                        <div class="second">квадиллак?</div>
+                 </div>
+            </div>
         </section>
 
         <section class="secondscreenabout">
             <p class="frogtaxi">лягушачье такси</p>
-            <p class="abouttaxi">КВАДИЛЛАК это такси для тех, кто не хочет ждать 
+            <p class="abouttaxi slideanim float-panel">КВАДИЛЛАК это такси для тех, кто не хочет ждать 
                 у моря погоды, мы предлагаем быстрый, надежный интересный и веселый способ передвижения 
                 и незабываемый опыт путешествия по всему миру.</p>
         </section>
@@ -67,7 +71,7 @@
             <h1 class="where1">где мы</h1>
             <h1 class="where2">обитаем?</h1>
 
-            <p class="aboutparking">двухэтажная парковка для лягушек – место, куда они<br> возвращаются после долгого рабочего дня, где они <br> могут расслабиться и отдохнуть.</p>
+            <p class="aboutparking slide-right">двухэтажная парковка для лягушек – место, куда они<br> возвращаются после долгого рабочего дня, где они <br> могут расслабиться и отдохнуть.</p>
             <p class="aboutparking1">парковка состоит из двух этажей, объединенных <br> между собой необычным лифтом. вход в здание <br> осуществляется прямиком через этот лифт.</p>
             
             <div class="plan"></div>
@@ -78,57 +82,153 @@
         </section>
 
         <section class="fifthscreenabout">
-            <div class="slider">
-                <div class="slider-wrapper flex">
-                    <div class="slide flex">
-                        <div class="slide-image slider-link prev"><img src="./images/swampabout.png"><div class="overlay"></div></div>
-                        <div class="slide-content">
-                            <div class="slide-title">МЕДИЦИНСКИЙ ЦЕНТР</div>
-                            <div class="slide-text">оснащен всем необходимым 
-                                для безопасного осмотра и своевременной помощи сотрудникам. в медицинском центре находятся кабинки для сканирования, трубы с икринками, уборная комната, лестнца, лифт, коврики 
-                                для ожидания и столики для посетителей.</div>
-                            <div class="slide-more">ЧИТАТЬ БОЛЬШЕ</div>
-                        </div>	
-                    </div>
-                    <div class="slide flex">
-                        <div class="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img3.jpg"><div class="overlay"></div></div>
-                        <div class="slide-content">
-                            <div class="slide-date">30.08.2017.</div>
-                            <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
-                            <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
-                            <div class="slide-more">READ MORE</div>
-                        </div>	
-                    </div>	
-                    <div class="slide flex">
-                        <div class="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img5.jpg"><div class="overlay"></div></div>
-                        <div class="slide-content">
-                            <div class="slide-date">30.09.2017.</div>
-                            <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
-                            <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
-                            <div class="slide-more">READ MORE</div>
-                        </div>	
-                    </div>
-                        <div class="slide flex">
-                        <div class="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img6.jpg"><div class="overlay"></div></div>
-                        <div class="slide-content">
-                            <div class="slide-date">30.10.2017.</div>
-                            <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
-                            <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
-                            <div class="slide-more">READ MORE</div>
-                        </div>	
-                    </div>
-                </div>
-                <div class="arrows">
-                <a href="#" title="Previous" class="arrow slider-link prev"></a>
-                <a href="#" title="Next" class="arrow slider-link next"></a>
-                </div>
-                </div>
 
+            <!-- первый слайдер -->
+            <ul class="slides">
+                <input type="radio" name="radio-btn" id="img-1" checked />
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="images/swampabout.png">
+                    </div>
+                    <div class="nav">
+                        <label for="img-6" class="prev">&#x2039;</label>
+                        <label for="img-2" class="next">&#x203a;</label>
+                    </div>
+                </li>
+            
+                <input type="radio" name="radio-btn" id="img-2" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="images/swampabout1.png">
+                    </div>
+                    <div class="nav">
+                        <label for="img-1" class="prev">&#x2039;</label>
+                        <label for="img-3" class="next">&#x203a;</label>
+                    </div>
+                </li>
+            
+                <input type="radio" name="radio-btn" id="img-3" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="images/swampabout2.png">
+                    </div>
+                    <div class="nav">
+                        <label for="img-2" class="prev">&#x2039;</label>
+                        <label for="img-4" class="next">&#x203a;</label>
+                    </div>
+                </li>
+            
+                <input type="radio" name="radio-btn" id="img-4" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="images/swampabout3.png">
+                    <div class="nav">
+                        <label for="img-3" class="prev">&#x2039;</label>
+                        <label for="img-5" class="next">&#x203a;</label>
+                    </div>
+                </li>
+            
+                <input type="radio" name="radio-btn" id="img-5" />
+                <li class="slide-container">
+                    <div class="slide">
+                        <img src="images/swampabout4.png" />
+                    <div class="nav">
+                        <label for="img-4" class="prev">&#x2039;</label>
+                        <label for="img-6" class="next">&#x203a;</label>
+                    </div>
+                </li>
+            
+                <input type="radio" name="radio-btn" id="img-6" />
+                <li class="slide-container">
+                    <div class="slide">
+                      <img src="images/swampabout5.png">
+                    </div>
+                    <div class="nav">
+                        <label for="img-5" class="prev">&#x2039;</label>
+                        <label for="img-1" class="next">&#x203a;</label>
+                    </div>
+                </li>
+            </ul>
+
+            
+            <h1 class="aboutswamp">медицинский центр оснащен всем необходимым <br>
+                для безопасного осмотра и своевременной помощи <br> сотрудникам. в медицинском центре находятся <br>кабинки для сканирования, трубы с икринками, <br>уборная комната, лестнца, лифт, коврики <br>
+                для ожидания и столики для посетителей.</h1>
+
+
+                <!-- второй слайдер -->
+                <ul class="slides1">
+                    <input type="radio" name="radio-btn" id="imgg-1" checked />
+                    <li class="slide-container1">
+                        <div class="slide1">
+                            <img src="images/medabout.png">
+                        </div>
+                        <div class="nav1">
+                            <label for="imgg-6" class="prev1">&#x2039;</label>
+                            <label for="imgg-2" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="imgg-2" />
+                    <li class="slide-container">
+                        <div class="slide1">
+                            <img src="images/medabout1.png">
+                        </div>
+                        <div class="nav1">
+                            <label for="imgg-1" class="prev1">&#x2039;</label>
+                            <label for="imgg-3" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="imgg-3" />
+                    <li class="slide-container1">
+                        <div class="slide1">
+                            <img src="images/medabout2.png">
+                        </div>
+                        <div class="nav1">
+                            <label for="imgg-2" class="prev1">&#x2039;</label>
+                            <label for="imgg-4" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="imgg-4" />
+                    <li class="slide-container1">
+                        <div class="slide1">
+                            <img src="images/medabout3.png">
+                        <div class="nav1">
+                            <label for="imgg-3" class="prev1">&#x2039;</label>
+                            <label for="imgg-5" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="imgg-5" />
+                    <li class="slide-container1">
+                        <div class="slide1">
+                            <img src="images/medabout4.png" />
+                        <div class="nav1">
+                            <label for="imgg-4" class="prev1">&#x2039;</label>
+                            <label for="imgg-6" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+                
+                    <input type="radio" name="radio-btn" id="imgg-6" />
+                    <li class="slide-container1">
+                        <div class="slide1">
+                          <img src="images/medabout5.png">
+                        </div>
+                        <div class="nav1">
+                            <label for="imgg-5" class="prev1">&#x2039;</label>
+                            <label for="imgg-1" class="next1">&#x203a;</label>
+                        </div>
+                    </li>
+                </ul>
+            
         </section>
 
         <script src="javascript/jquery-3.6.3.js" charset="utf-8"></script>
+        <script src="javascript/float-panel.js"></script>
+        <script src="javascript/scrollreveal.js"></script>
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
         <script src="javascript/main.js"></script>
-        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     </body>
     </html>
