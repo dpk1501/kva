@@ -299,7 +299,7 @@ body, html {
 
     z-index: 2;
 }
-.ourstore:hover {
+.store:hover {
     animation-play-state: paused;
     background-image: url('../images/store.svg');
 }
