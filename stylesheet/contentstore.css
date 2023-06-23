@@ -4,7 +4,7 @@
     display: block;
     font-size: 32vw;
     background-color: #0E2800;
-    height: 1700px;
+    height: 1600px;
     overflow-x: hidden;
     font-family: 'VelaSans-Regular';
   }
@@ -293,4 +293,72 @@
     width: 20vw;
     height: 73vh;
     background-size: cover;
+  }
+
+  .ours:hover {
+    opacity: 40%;
+  }
+
+  .text1 {
+    position: absolute;
+    left: 12%;
+    bottom: 70%;
+    color: #fff;
+    font-size: 8%;
+  }
+
+  .text2 {
+    position: absolute;
+    left: 42%;
+    bottom: 70%;
+    color: #fff;
+    font-size: 8%;
+  }
+
+  .text3 {
+    position: absolute;
+    right: 16%;
+    bottom: 70%;
+    color: #fff;
+    font-size: 8%;
+  }
+
+  .text4 {
+    position: absolute;
+    left: 12%;
+    bottom: 20%;
+    color: #fff;
+    font-size: 8%;
+  }
+
+  .text5 {
+    position: absolute;
+    left: 42%;
+    bottom: 20%;
+    color: #fff;
+    font-size: 8%;
+  }
+
+  .text6 {
+    position: absolute;
+    right: 16%;
+    bottom: 20%;
+    color: #fff;
+    font-size: 8%;
+  }
+
+  .maintext {
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+  }
+  .ours:hover .maintext {
+    opacity: 1;
+  }
+
+  .last {
+    word-spacing: 42em;
+    color:#7FE941;
+    font-size: 3%;
+    position: relative;
+    margin: 5% 0 2% 3%;
   }
