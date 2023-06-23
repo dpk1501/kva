@@ -85,6 +85,8 @@ body, html {
   position: absolute;
   right: 2%;
   height: 30%;
+
+  z-index: 5;
 }
 
 #nav-icon3 {
@@ -170,7 +172,7 @@ body, html {
   justify-content: space-between;
   width: 50%;
   height: 20%;
-  margin: 0 0 0 42%;
+  margin: 0 0 0 40%;
   flex-grow: 1;
   flex-basis: 25%;
   min-width: 0;
@@ -192,6 +194,8 @@ body, html {
   color: #7FE941;
 }
 
+
+/* первый экран */
 .firstscreennews {
   position: relative;
   z-index: 0;
@@ -249,7 +253,7 @@ body, html {
 
   right: -100%;
   left: -100%;
-  margin: 0 -100%;
+  margin: 2% -100%;
 
   animation: kvadillac 22s infinite linear;
 }
