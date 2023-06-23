@@ -5,68 +5,8 @@ body, html {
   background: #0E2800;
   aspect-ratio: 1 / 2;
   font-family: 'VelaSans-Regular';
-  height: 2400px;
+  height: 1300px;
   width: 100%;
-}
-
-
-.kvadillac {
-  position: fixed;
-  z-index: 3;
-  left: 4%;
-  top: 5%;
-
-  font-family: 'VelaSans-Regular';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 4%;
-
-  color: #7FE941;
-}
-
-.firstscreennews {
-  position: relative;
-  z-index: 0;
-  top: 0;
-  width: 100%;
-  height: 33%;
-}
-
-
-.news {
-  position: absolute;
-  left: 10%;
-  top: 35%;
-
-  font-family: 'VelaSans-Regular';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 32%;
-  line-height: 100.1%;
-
-  background: linear-gradient(180deg, #7FE941 0%, #00FFD5 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  z-index: 0;
-}
-
-.news1 {
-  position: absolute;
-  left: 43%;
-  top: 55%;
-
-  font-family: 'VelaSans-Regular';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 32%;
-  line-height: 100.1%;
-  background: linear-gradient(180deg, #7FE941 0%, #00FFD5 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-
-  z-index: 0;
 }
 
 /* меню */
@@ -225,6 +165,67 @@ body, html {
 }
 
 
+.kvadillac {
+  position: absolute;
+  z-index: 3;
+  left: 4%;
+  top: 5%;
+
+  font-family: 'VelaSans-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4%;
+
+  color: #7FE941;
+}
+
+.firstscreennews {
+  position: relative;
+  z-index: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+}
+
+
+.news {
+  position: absolute;
+  left: 10%;
+  top: 35%;
+
+  font-family: 'VelaSans-Regular';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32%;
+  line-height: 100.1%;
+
+  background: linear-gradient(180deg, #7FE941 0%, #00FFD5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  z-index: 0;
+}
+
+.news1 {
+  position: absolute;
+  left: 43%;
+  top: 55%;
+
+  font-family: 'VelaSans-Regular';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32%;
+  line-height: 100.1%;
+  background: linear-gradient(180deg, #7FE941 0%, #00FFD5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  z-index: 0;
+}
+
+
+
 /* постеры */
 .containernews {
   position: absolute;
@@ -293,6 +294,39 @@ body, html {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 34%;
+  height: 50%;
   background-color: #fff;
+}
+
+
+.experience {
+  text-align: center;
+  position: absolute;
+  font-size: 10%;
+  color: #fff;
+  top: 50%;
+  left: 30%;
+  z-index: 3;
+}
+
+video:hover + .experience {
+  display: none;
+}
+
+
+
+video {
+  z-index: 1;
+  position: relative;
+  margin: 10% 0 0 15%;
+  width: 70%;
+  height: auto;
+}
+
+.last {
+  word-spacing: 42em;
+  color:#0E2800;
+  font-size: 3%;
+  position: relative;
+  margin: 4% 0 0 4%;
 }

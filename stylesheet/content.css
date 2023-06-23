@@ -8,6 +8,9 @@ body, html {
     font-weight: 400;
 }
 
+.menu {
+  cursor: pointer;
+}
 .cursor {
   position: fixed;
   left: 0;
