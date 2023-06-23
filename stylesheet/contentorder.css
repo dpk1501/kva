@@ -5,7 +5,22 @@ body, html {
     background: #0E2800;
     aspect-ratio: 1 / 1.5;
     font-family: 'VelaSans-Regular';
+
+    cursor: none;
 }
+
+#circularcursor {
+  background-color: transparent;
+  border:1px solid white;    
+  height:20px;
+  width:20px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  position: absolute;
+  z-index: 1;
+}
+
 
 .glow-on-hover {
   width: 100%;

@@ -207,17 +207,11 @@ function scrollFooter(scrollY, heightFooter)
     }
 }
 
-
-
-
-$(function() {
-  $('.marquee').marquee({
-    duration: 7000,
-    startVisible: true,
-    duplicated: true
+$(document).ready(function() {
+    $(document).on('mousemove', function(e) {
+      $('#circularcursor').css({
+        left: e.pageX,
+        top: e.pageY
+      });
+    })
   });
-});
-
-$('.video').click(function() {
-    window.open("src", "https://www.youtube.com/watch?v=YcMrtSKwqVs");
-});
