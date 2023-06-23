@@ -253,3 +253,7 @@ $(function() {
     duplicated: true
   });
 });
+
+$('.video').click(function() {
+    window.open("src", "https://www.youtube.com/watch?v=YcMrtSKwqVs");
+});
