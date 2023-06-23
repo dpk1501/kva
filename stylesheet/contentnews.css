@@ -313,7 +313,10 @@ video:hover + .experience {
   display: none;
 }
 
-
+.experience a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .video {
   z-index: 1;
